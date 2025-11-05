@@ -42,6 +42,8 @@
             this.textBox_c = new System.Windows.Forms.TextBox();
             this.button_giai = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox_kq = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,7 +117,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 224);
+            this.label3.Location = new System.Drawing.Point(11, 224);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 12;
@@ -125,7 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 250);
+            this.label4.Location = new System.Drawing.Point(12, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 13;
@@ -166,11 +168,29 @@
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // textBox_kq
+            // 
+            this.textBox_kq.Location = new System.Drawing.Point(63, 279);
+            this.textBox_kq.Name = "textBox_kq";
+            this.textBox_kq.Size = new System.Drawing.Size(100, 20);
+            this.textBox_kq.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 282);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Kết quả";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 339);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox_kq);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button_giai);
             this.Controls.Add(this.textBox_c);
@@ -205,6 +225,8 @@
         private System.Windows.Forms.TextBox textBox_c;
         private System.Windows.Forms.Button button_giai;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox_kq;
+        private System.Windows.Forms.Label label5;
     }
 }
 

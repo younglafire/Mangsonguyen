@@ -69,6 +69,11 @@ namespace Mangsonguyen
                 MessageBox.Show("Vui lòng nhập số hợp lệ cho hệ số b!");
                 return;
             }
+            else if (radioButton1.Checked)
+            {
+                double kq = -b / a;
+                this.textBox_kq.Text = kq.ToString();
+            }
         }
     }
 }
