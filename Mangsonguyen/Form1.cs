@@ -74,11 +74,44 @@ namespace Mangsonguyen
                 double kq = Math.Round(-b / a, 2);
                 this.textBox_kq.Text = "Phuong trinh co nghiem: " + kq.ToString();
             }
+
+            else
+            {
+                double c;
+                if (!double.TryParse(this.textBox_c.Text, out c))
+                {
+                    MessageBox.Show("Vui lòng nhập số hợp lệ cho hệ số c!");
+                    return;
+                }
+                double delta = b * b - 4 * a * c;
+                if (delta < 0)
+                {
+                    this.textBox_kq.Text = "Phuong trinh vo nghiem";
+                }
+                else if (delta == 0)
+                {
+                    double kq = Math.Round(-b/ (2 * a), 2);
+                    this.textBox_kq.Text = "Phuong trinh co nghiem kep: " + kq.ToString();
+                }
+                else // Nghiem binh thuong
+                {
+                    double kq1, kq2;
+                    kq1 = Math.Round((-b + Math.Sqrt(delta)) / (2 * a), 2);
+                    kq2 = Math.Round((-b - Math.Sqrt(delta)) / (2 * a), 2);
+                }
+
+            }
+            
         }
 
         private void textBox_kq_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
