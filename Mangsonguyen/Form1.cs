@@ -71,9 +71,14 @@ namespace Mangsonguyen
             }
             else if (radioButton1.Checked)
             {
-                double kq = -b / a;
-                this.textBox_kq.Text = kq.ToString();
+                double kq = Math.Round(-b / a, 2);
+                this.textBox_kq.Text = "Phuong trinh co nghiem: " + kq.ToString();
             }
+        }
+
+        private void textBox_kq_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

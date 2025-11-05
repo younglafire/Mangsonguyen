@@ -172,8 +172,10 @@
             // 
             this.textBox_kq.Location = new System.Drawing.Point(63, 279);
             this.textBox_kq.Name = "textBox_kq";
-            this.textBox_kq.Size = new System.Drawing.Size(100, 20);
+            this.textBox_kq.ReadOnly = true;
+            this.textBox_kq.Size = new System.Drawing.Size(230, 20);
             this.textBox_kq.TabIndex = 17;
+            this.textBox_kq.TextChanged += new System.EventHandler(this.textBox_kq_TextChanged);
             // 
             // label5
             // 
